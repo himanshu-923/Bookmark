@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMark - B.Tech CSE Resources</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@4040&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #374151;
+        }
+        .container {
+            max-width: 90%; /* Responsive width */
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 0.75rem; /* rounded-xl */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: transform 0.2s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .category-title {
+            font-size: 1.5rem; /* text-2xl */
+            font-weight: 700; /* font-bold */
+            color: #1f2937;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+        }
+        .link-item {
+            display: block;
+            padding: 0.75rem 0;
+            color: #4f46e5; /* indigo-600 */
+            text-decoration: none;
+            transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+            border-radius: 0.375rem; /* rounded-md */
+        }
+        .link-item:hover {
+            color: #3730a3; /* indigo-800 */
+            background-color: #e0e7ff; /* indigo-100 */
+            padding-left: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="text-center mb-10">
+            <h1 class="text-5xl font-extrabold text-gray-800 mb-4 rounded-lg bg-white p-4 shadow-lg">Welcome to BookMark <span class="text-indigo-600">🚀</span></h1>
+            <p class="text-lg text-gray-600">Your personal space to save and organize your favorite links for B.Tech CSE!</p>
+        </header>
+
+        <main>
+            <!-- Existing Links -->
+            <section class="card">
+                <h2 class="category-title">My Essential Tools 🛠️</h2>
+                <a href="https://jitter.video/files/" class="link-item" title="Quickly create stunning motion designs with this animation tool.">Jitter Video</a>
+                <a href="https://www.typefaceanimator.com/" class="link-item" title="Animate text and typography with ease for engaging visuals.">TypeFace</a>
+                <a href="https://tldraw.dev/" class="link-item" title="A free, open-source whiteboarding and drawing app for quick sketches and ideas.">TLDraw</a>
+                <a href="https://www.saymine.com/" class="link-item" title="Discover and manage where your personal data is online.">SayMine</a>
+                <a href="https://www.blackbox.ai/" class="link-item" title="AI code assistant for developers, helping with code snippets and solutions.">BlackBox</a>
+                <a href="https://www.widecanvas.ai/" class="link-item" title="AI-powered tool for expanding images and creative content.">WideCanvas</a>
+                <a href="https://roadmap.sh/" class="link-item" title="Interactive roadmaps to guide your learning in various development fields.">Roadmap.sh</a>
+                <a href="https://www.playcss.app/" class="link-item" title="Interactive playground to learn and experiment with CSS.">PlayCSS</a>
+                <a href="https://kombai.com/" class="link-item" title="AI-powered design to code tool for front-end development.">Kombai</a>
+                <a href="https://www.napkin.ai/" class="link-item" title="An AI assistant that helps you organize notes and ideas visually.">Napkin</a>
+                <a href="https://qwen.ai/home" class="link-item" title="A large AI model for various applications, including code and content generation.">Qwen AI</a>
+            </section>
+
+            <!-- New Categories -->
+            <section class="card">
+                <h2 class="category-title">Online Learning & Tutorials 📚</h2>
+                <a href="https://www.coursera.org/" class="link-item" title="Offers online courses, specializations, and degrees from top universities and companies.">Coursera</a>
+                <a href="https://www.edx.org/" class="link-item" title="Provides high-quality online courses from the world's best universities and institutions.">edX</a>
+                <a href="https://www.freecodecamp.org/" class="link-item" title="Learn to code by building projects and earn free certifications.">freeCodeCamp</a>
+                <a href="https://www.theodinproject.com/" class="link-item" title="A free, open-source curriculum to learn full-stack web development.">The Odin Project</a>
+                <a href="https://www.geeksforgeeks.org/" class="link-item" title="A computer science portal for geeks, offering tutorials, algorithms, and interview preparation.">GeeksforGeeks</a>
+                <a href="https://www.w3schools.com/" class="link-item" title="Web tutorials and references for HTML, CSS, JavaScript, SQL, and more.">W3Schools</a>
+                <a href="https://www.pluralsight.com/" class="link-item" title="Online training for developers and IT professionals in various tech skills.">Pluralsight</a>
+            </section>
+
+            <section class="card">
+                <h2 class="category-title">Competitive Programming & Practice 🏆</h2>
+                <a href="https://leetcode.com/" class="link-item" title="Platform for coding challenges and interview preparation from top tech companies.">LeetCode</a>
+                <a href="https://www.hackerrank.com/" class="link-item" title="Practice coding, prepare for interviews, and compete in programming challenges.">HackerRank</a>
+                <a href="https://www.codechef.com/" class="link-item" title="A global programming community and competitive programming platform.">CodeChef</a>
+                <a href="https://codeforces.com/" class="link-item" title="Competitive programming platform for regular contests and problem-solving.">Codeforces</a>
+            </section>
+
+            <section class="card">
+                <h2 class="category-title">AI/ML & Data Science 🧠</h2>
+                <a href="https://www.kaggle.com/" class="link-item" title="Platform for data science and machine learning competitions, datasets, and notebooks.">Kaggle</a>
+                <a href="https://www.fast.ai/" class="link-item" title="Offers free practical deep learning courses for coders.">fast.ai</a>
+                <a href="https://www.deeplearning.ai/" class="link-item" title="Provides AI education programs developed by Andrew Ng.">DeepLearning.AI</a>
+                <a href="https://www.tensorflow.org/resources/learn-ml" class="link-item" title="Official resources for learning Google's TensorFlow machine learning framework.">TensorFlow Resources</a>
+            </section>
+
+            <section class="card">
+                <h2 class="category-title">Tech News & Community 📰</h2>
+                <a href="https://news.ycombinator.com/" class="link-item" title="A social news website focusing on computer science and entrepreneurship.">Hacker News</a>
+                <a href="https://dev.to/" class="link-item" title="An online community for developers to share articles, ideas, and connect.">DEV Community</a>
+                <a href="https://www.infoq.com/" class="link-item" title="Provides news, articles, and presentations on enterprise software development.">InfoQ</a>
+                <a href="https://pragmaticengineer.com/" class="link-item" title="Newsletter and blog with in-depth articles for software engineers.">The Pragmatic Engineer</a>
+                <a href="https://stackoverflow.blog/" class="link-item" title="The official blog of Stack Overflow, covering developer insights and trends.">Stack Overflow Blog</a>
+            </section>
+
+            <section class="card">
+                <h2 class="category-title">Career Development & Interviews 💼</h2>
+                <a href="https://www.pramp.com/" class="link-item" title="Practice mock coding interviews with peers for free.">Pramp</a>
+                <a href="https://www.scaler.com/" class="link-item" title="Offers courses and a platform for competitive programming and interview prep.">Scaler (formerly InterviewBit)</a>
+                <a href="https://techdevguide.withgoogle.com/" class="link-item" title="Google's guide to growing technical skills and preparing for interviews.">Google Tech Dev Guide</a>
+            </section>
+        </main>
+
+        <footer class="text-center mt-10 text-gray-500 text-sm">
+            <p>&copy; 2025 BookMark. Happy Coding! ✨</p>
+        </footer>
+    </div>
+</body>
+</html>
